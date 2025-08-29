@@ -2,7 +2,7 @@
 
 public struct TimeFrame {
 
-    public ITimeValue End => new TimeValues.SecondsTimeValue(Start.Seconds + Duration.Seconds);
+    public ITimeValue End => Start + Duration;
 
     public ITimeValue Start { get; init; }
     public ITimeValue Duration { get; init; }
