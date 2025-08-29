@@ -1,8 +1,9 @@
 ﻿using Core.Entities.Clips;
+using Core.Entities.Edits;
 
 namespace Core.Entities.Timelines;
 
-public interface ITimeline {
+public interface ITimeline : IEditable {
 
     public string Name { get; }
 

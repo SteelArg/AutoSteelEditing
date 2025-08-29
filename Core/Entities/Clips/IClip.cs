@@ -1,11 +1,12 @@
 ﻿using Core.DataTypes;
 using Core.DataTypes.MediaTypes;
+using Core.Entities.Edits;
 using Core.Entities.Resources;
 using Core.Entities.Timelines;
 
 namespace Core.Entities.Clips;
 
-public interface IClip<out T> : ICloneable where T : Media {
+public interface IClip<out T> : IEditable, ICloneable where T : Media {
     
     public IResource<T> Resource { get; }
 
@@ -14,8 +15,6 @@ public interface IClip<out T> : ICloneable where T : Media {
     public int Track { get; }
 
     public ITimeline Timeline { get; }
-
-    public event Action Changed;
 
     public void SetTimeline(ITimeline timeline);
 
