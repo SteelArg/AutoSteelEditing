@@ -14,4 +14,12 @@ public interface ITimeValue {
         return new SecondsTimeValue(first.Seconds - second.Seconds);
     }
 
+    public static bool operator <(ITimeValue first, ITimeValue second) {
+        return first.Seconds < second.Seconds;
+    }
+
+    public static bool operator >(ITimeValue first, ITimeValue second) {
+        return first.Seconds > second.Seconds;
+    }
+
 }

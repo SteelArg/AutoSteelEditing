@@ -12,4 +12,12 @@ public struct TimeFrame {
         Duration = duration;
     }
 
+    public static bool operator ==(TimeFrame left, TimeFrame right) {
+        return left.Start == right.Start && left.Duration == right.Duration;
+    }
+
+    public static bool operator !=(TimeFrame left, TimeFrame right) {
+        return !(left == right);
+    }
+
 }
