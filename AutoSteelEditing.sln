@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{48717614-8FB0-4C9A-B086-9333C9C27DC0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{95185347-A8CB-4AE8-B945-950702CCC0E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreTests", "CoreTests\CoreTests.csproj", "{D2607E15-5DA5-4504-B586-106EF3EDD71C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,9 +39,20 @@ Global
 		{48717614-8FB0-4C9A-B086-9333C9C27DC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48717614-8FB0-4C9A-B086-9333C9C27DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48717614-8FB0-4C9A-B086-9333C9C27DC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2607E15-5DA5-4504-B586-106EF3EDD71C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2607E15-5DA5-4504-B586-106EF3EDD71C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2607E15-5DA5-4504-B586-106EF3EDD71C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2607E15-5DA5-4504-B586-106EF3EDD71C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{75914967-8D25-4A92-B72D-DA3B7CF3EF47} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{6632E76B-9615-4531-8533-35F4D2D90355} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{923D9CDB-FA9C-4D1D-B56A-04874A6DFADF} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{48717614-8FB0-4C9A-B086-9333C9C27DC0} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{D2607E15-5DA5-4504-B586-106EF3EDD71C} = {95185347-A8CB-4AE8-B945-950702CCC0E7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6DF67673-FE51-4454-8C8A-6FAB514D48E2}
