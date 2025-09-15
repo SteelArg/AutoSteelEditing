@@ -1,9 +1,7 @@
-﻿namespace Core.Utils {
+﻿namespace Core.Utils;
 
-    public interface IFactory<T> {
+public interface IFactory<T> {
 
-        public T Create();
-
-    }
+    public T Create();
 
 }

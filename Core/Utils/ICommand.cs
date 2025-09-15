@@ -1,9 +1,7 @@
-﻿namespace Core.Utils {
+﻿namespace Core.Utils;
 
-    public interface ICommand {
+public interface ICommand {
 
-        public void Execute();
-
-    }
+    public void Execute();
 
 }

@@ -1,9 +1,7 @@
 ﻿using Core.Utils;
 
-namespace Core.Entities.Edits {
+namespace Core.Entities.Edits;
 
-    public interface IEditCommand : ICommand {
-
-    }
+public interface IEditCommand : ICommand {
 
 }
